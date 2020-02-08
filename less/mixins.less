@@ -1,1 +1,23 @@
-// Mixins in here
+.flex
+{
+    display: flex;
+    flex-direction: row;
+    
+}
+.btn {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    width:80%;
+    height: 20%;
+    font-size: 16px;
+    color: @sandy-beach;
+    background-color: @button-bg;
+    border-radius: 12px;
+    margin-bottom: 30px;
+    @media @mobile {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 5px;
+      }
+}
